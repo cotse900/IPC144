@@ -1,0 +1,18 @@
+Workshop #4:
+Name   : Chungon Tse
+ID     : 154928188
+Email  : cotse@myseneca.ca
+Section: NFF
+
+1. I used parallel arrays to link the 3 sets of data of Item cost, importance of Item, and financial options for a given Item. The key was that the arrays were linked by the MAX_ITEM. The cost, importance and financial options were all linked to how many Items the input would enter.
+2. Initializing the iterator variable to zero, instead of one, is about setting it in a way that allows any number of possible data allowed by the array(s). For example, in
+
+	for (i = 0; i < wishListSize; i++)
+	{
+		printf("%3d  %5d    %5c    %11.2lf\n", i + 1, priority[i], options[i], cost[i]);
+		costSum += cost[i];
+	}
+
+If i = 1, it would have returned zero for the first item of the wish list.
+
+3. There are candies in boxes. So if you take one box, call it box A, and open it, then you see there are candies there. The candies of box A stay in box A. You can take box B, and you see candies in box B too. Those candies stay in box B. If I ask you to take one candy each from box A and box B, then you just take one plus one, two, candies from A and B. Then you have one candy from A, and another from B. You don't mix up these candies. If you take two from box A, you also take two from box B. You never mix up the candies from any box.
