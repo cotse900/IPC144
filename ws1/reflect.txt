@@ -1,0 +1,4 @@
+Chung On TSE, 154928188, cotse@myseneca.ca, IPC144NFF
+1. I learned writing a simple c program, running commands in a matrix server, and applying such knowledge in practice.
+2. Secure Shell is an encrypted network protocol for remote data communication over unsecured cyberspace and I used SSH to access the college's matrix server and interact with it remotely.
+3. SSH File Transfer Protocol allows accessing files, transferring files and file management in a secure way and I used SFTP to access files stored in the matrix server, transferring my assignment there, as well as managing files at my laptop and the college's remote network space.
