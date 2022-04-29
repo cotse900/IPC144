@@ -1,0 +1,60 @@
+Workshop #3:
+Name   : Chungon Tse
+ID     : 154928188
+Email  : cotse@myseneca.ca
+Section: NFF
+
+1. If-else and switch-case.
+
+I used the switch-case construct to display month names:
+
+#define LOG_DAYS 3
+int main(void){
+	const int JAN = 1;
+	const int FEB = 2;
+	int yearInput = 0;
+	int monthInput = 0;
+	int day = 0;
+	scanf("%d %d", &yearInput, &monthInput);
+	for (day = 1; day < LOG_DAYS + 1; day++)
+	{
+		switch (monthInput)
+		{
+		case 1:
+			printf("%d-JAN-%02d\n", yearInput, day);
+			break;
+		case 2:
+			printf("%d-FEB-%02d\n", yearInput, day);
+			break;
+		}
+	}
+
+If I had used the if-else construct, it might have looked like:
+
+#define LOG_DAYS 3
+int main(void){
+	const int JAN = 1;
+	const int FEB = 2;
+	int yearInput = 0;
+	int monthInput = 0;
+	int day = 0;
+	scanf("%d %d", &yearInput, &monthInput);
+	if ((yearInput >= MIN_YEAR && yearInput <= MAX_YEAR) && (monthInput >= JAN && monthInput <= DEC))
+		{
+			printf("\n*** Log date set! ***\n");
+			printf("\n");
+			printf("Log starting date : %d-%d-01", yearInput, monthInput);
+			switch (monthInput)
+			{
+			case 1:
+				printf("Log starting date: %d-JAN-01\n", yearInput);
+				break;
+			case 2:
+				printf("Log starting date: %d-FEB-01\n", yearInput);
+				break;
+			}
+		}
+
+2. For loop, while loop, and do-while loop. I used do-while loop for part 1 because I needed to test the user input of year and month at least once. Both had to be correct and within the given range. I used nested while loops for part 2 to test the ratings as long as the ratings were valid and within the range.
+
+3. First, after I came up with a complete source code, I checked if there were important warnings. When there were no building errors, I checked for whether the variables, arguments, etc., were placed properly. I also used the break point function to test each variable and how it turned out upon executing a certain selection construct or another function. For example, I learned that I should not have put int day = 1 within a for loop, so I put int = day 0 outside the loop to rectify this mistake. As to the break point, I found it to be an essential function especially when source code will usually be longer than in this exercise. Checking variables' outcomes is important. If there is some weird number for a numeric result, for example, then there may be some problem with it as an integer/double/float, or the loop may not be properly written with the right logic.
