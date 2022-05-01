@@ -1,0 +1,11 @@
+Workshop #5:
+Name   : Chungon Tse
+ID     : 154928188
+Email  : cotse@myseneca.ca
+Section: NFF
+
+1. The use of user-defined data allows more flexibility than not in using different data to predict different outcomes with the same data structure. Another advantage is the possibility of reusing the same structures for different sets of data. It is also easy to manage data this way and keep them organized. There is no need to rewrite the entire program. In this workshop, with the game, the code defines the open variables of lives, moves, placement of treasures/bombs, and so on. The user can input data, such as how many bombs and treasures, within flexible ranges and the data will play out in the game and are visible to the user. It is possible to change only the few figures of the variables to offer a different experience.
+
+2. One change may be to export game results to a text file in a matrix server or a certain database (file). Another is to add some function to make it possible to try the game again without declaring variables all over.
+
+3. I spent the most time working with the large number of data types in the structs for this exercise and the end product was so long and massive. There was the need for a large number of lines to make each step logical and much effort for checking and debugging along the way. gameInfo was linked to so many things and so it took effort to not confound one thing and another, whether it was about which variables, which loop structure or which data type to use.
