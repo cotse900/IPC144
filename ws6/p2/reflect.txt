@@ -1,0 +1,32 @@
+Workshop #6:
+Name   : Chungon Tse
+ID     : 154928188
+Email  : cotse@myseneca.ca
+Section: NFF
+
+1. In the function "displayReportData", there is the use of the struct "ReportData" and the constant integer "isCheapest" (for displaying which food item is the cheapest), and the function involves the doubles totalCalories and costPerCalories that are related with one another. The data row originates from reportData that consists of 3 integers and 6 doubles. If I count data types literally, the integers are allocated 4 bytes of memory each, and doubles 8 bytes of memory each. Assuming that there is a 32-bit compiler, then a full entry takes 4 integers and 6 doubles and requires 4*4+6*8=64 bytes of memory for a single entry of food item for things like sku, price, weight, serving, calories, and the display of "***" for the cheapest entry.
+
+In displayReportData, as in my answer below, I think ReportData can be slightly simplified (or basically merged with CatFoodInfo) and go with fewer declared variables. This way, it may take up less memory for achieving the same goal and the code can also be easier to read than in this current situation.
+
+2. Basically, CatFoodInfo can be incorporated into ReportData because ReportData has all the members that are in CatFoodInfo. But if we consider ReportData alone, it may be changed as:
+
+struct ReportData{
+	int sku;
+	double price;
+	double weightLbs;
+	int calories;
+};
+
+sku, price and calories stay as is. The user input is already in pounds, so actually weightKg (and weightg) can be optional and it is an actual constant convertible by the macro KG_TO_LBS. The serving in totalServings and costPerServing is dictated by the macro SERVING_GRAM so the two doubles are not needed either.
+
+As for presenting Analysis Report, I would suggest Cal/Serve be renamed into Calories since it is only input of calories, not serving (SERVING_GRAM being a constant). A snippet of the overhauled code would contain displayReportData like this:
+
+void displayReportData(const struct ReportData reportData, const int isCheapest) {
+	printf("%07d %10.2lf %10.1lf %10.4lf %9d %8d %8.1lf %7.2lf %7.5lf", reportData.sku, reportData.price, reportData.weightLbs, reportData.weightLbs / KG_TO_LBS, reportData.weightLbs / KG_TO_LBS * 1000, reportData.calories, reportData.calories / SERVING_GRAM, reportData.calories / SERVING_GRAM / reportData.price, reportData.price / reportData.calories);
+	if (isCheapest) {
+		printf(" ***\n");
+	}
+	else {
+		printf("\n");
+	}
+}
