@@ -340,7 +340,7 @@ Subject : It's broken/does not work
 Selection: 2
 
 Enter the ticket message details (150 chars. maximum). Press the ENTER key to submit:
-Double broken!
+I'm so confused.
 
 ----------------------------------------
 Ticket 080020 - Update Options
@@ -722,7 +722,7 @@ Account Ticketing System - Agent Menu
 
 Selection: 11
 
-There are 13 account(s) currently archived.
+There are 0 account(s) currently archived.
 
 << ENTER key to Continue... >>
 
@@ -749,7 +749,7 @@ Account Ticketing System - Agent Menu
 
 Selection: 12
 
-There are 6 ticket(s) and a total of 54 message(s) archived.
+There are 0 ticket(s) and a total of 0 message(s) archived.
 
 << ENTER key to Continue... >>
 
@@ -882,7 +882,10 @@ Enter the password (must be 8 chars in length): aaJJ88$#
 Demographic Data Input
 ----------------------------------------
 Enter birth year (current age must be between 18 and 110): 2004
-Enter the household Income: $1910
+Enter the household Income: $asdf
+ERROR: Value must be a double floating-point number: -8.22
+ERROR: Value must be a positive double floating-point number: 0.00
+ERROR: Value must be a positive double floating-point number: 125000.12
 Enter the country (30 chars max.): Not all countries get along unfortunately
 ERROR: String length must be no more than 30 chars: u.s.a.
 
@@ -1038,7 +1041,7 @@ Acct# Acct.Type Birth Income      Country    Disp.Name       Login      Password
 82042 CUSTOMER   1932 $  40187.20 GUAM       Dexter Martin   Isabelle   H*2*k*&*
 35049 CUSTOMER   1990 $  60494.16 LESOTHO    Buck Odom       Aidan      B*6*s*&*
 54056 CUSTOMER   1961 $  91914.61 BAHAMAS    Craig Mcknight  Fredericka O*8*e*&*
-82043 CUSTOMER   2004 $   1910.00 U.S.A.     Nay to Hay      HarryHorse a*J*8*$*
+82043 CUSTOMER   2004 $ 125000.12 U.S.A.     Nay to Hay      HarryHorse a*J*8*$*
 53070 CUSTOMER   1990 $ 180222.22 CANADA     Wylie Coyote    Lara       d*9*@*F*
 
 << ENTER key to Continue... >>
@@ -1523,10 +1526,7 @@ Enter the password (must be 8 chars in length): 12RR!@jj
 
 Demographic Data Input
 ----------------------------------------
-Enter birth year (current age must be between 18 and 110): 1911
-ERROR: Value must be between 1912 and 2004 inclusive: 54321.22
-ERROR: Value must be an integer: Australia
-ERROR: Value must be an integer: 1912
+Enter birth year (current age must be between 18 and 110): 1912
 Enter the household Income: $54321.22
 Enter the country (30 chars max.): Australia
 
@@ -1572,7 +1572,7 @@ Acct# Acct.Type Birth Income      Country    Disp.Name       Login      Password
 82042 CUSTOMER   1932 $  40187.20 GUAM       Dexter Martin   Isabelle   H*2*k*&*
 35049 CUSTOMER   1990 $  60494.16 LESOTHO    Buck Odom       Aidan      B*6*s*&*
 54056 CUSTOMER   1961 $  91914.61 BAHAMAS    Craig Mcknight  Fredericka O*8*e*&*
-82043 CUSTOMER   2004 $   1910.00 U.S.A.     Nay to Hay      HarryHorse a*J*8*$*
+82043 CUSTOMER   2004 $ 125000.12 U.S.A.     Nay to Hay      HarryHorse a*J*8*$*
 53070 CUSTOMER   1990 $ 180222.22 CANADA     Wylie Coyote    Lara       d*9*@*F*
 
 << ENTER key to Continue... >>
@@ -2694,7 +2694,7 @@ Account Ticketing System - Agent Menu
 
 Selection: 11
 
-There are 26 account(s) currently archived.
+There are 13 account(s) currently archived.
 
 << ENTER key to Continue... >>
 
@@ -2721,7 +2721,7 @@ Account Ticketing System - Agent Menu
 
 Selection: 12
 
-There are 12 ticket(s) and a total of 108 message(s) archived.
+There are 6 ticket(s) and a total of 54 message(s) archived.
 
 << ENTER key to Continue... >>
 
@@ -2750,7 +2750,7 @@ Selection: 0
 
 Saving session modifications...
    4 account saved.
-   1 tickets saved.
+   7 tickets saved.
 ### LOGGED OUT ###
 
 ==============================================
