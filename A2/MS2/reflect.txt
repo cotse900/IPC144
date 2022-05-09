@@ -1,0 +1,44 @@
+Assignment 2
+Milestone 1-2:
+Name   : Chungon Tse
+ID     : 154928188
+Email  : cotse@myseneca.ca
+Section: NFF
+
+1. I only used strcmp as below. The wider context was strcmp helped to validate logging in and accessing the Account Ticketing System menu in accountTicketingUI.c.
+
+        if(queryAccountIndex != -1
+            && strcmp(data->accounts[queryAccountIndex].login.loginName, loginName) == 0
+            && strcmp(data->accounts[queryAccountIndex].login.password, password) == 0 ){
+            validLogin = 0;
+            return queryAccountIndex;
+        }else{
+            validLogin--;
+            printf("INVALID user login/password combination! [attempts remaining:%d]\n", validLogin);
+
+As with the rule of strcmp itself, validating if two strings are equal could return the result of 0, a negative, or a positive value. In this case, a non-zero result would trigger the decrement of validLogin, as required in this exercise. In a way, I found it handy for true-false validation in writing lines in general. It was also consistent, if I may say so, with how true is 0 and false is 1 in the boolean logic. strcmp is also arguably a fairly practical, or the most practical, string function. strcat is probably a close second. These string functions remind me of the corresponding Excel text formulas that are derive from VBA. Elsewhere, I had getCString in commonHelpers.c since Assignment 1 and I found it to be useful too for many other daily situations that are beyond this exercise. There were clearStandardInputBuffer(), limitation of input to a certain amount of characters, and comparison and limitation of string length to limit and elicit reasonable user input.
+
+2. In commonHelpers.c, I added mainly four functions that were related to user input that was about strings/arrays of characters. First, there was int getZeroOrPositiveInteger(void). It was an extension of the earlier function getInteger() for comparing the user input that would result from getInteger() and the local result declared as a non-zero integer. It was simply for enforcing a non-negative integer as input. Also, I had int haveWhitespace(char* stringPtr, int length) for checking out white space (similar to isspace) that was related to the prohibition of space in user login names. There was void stringToUpper(char *convertString) for converting every letter into the upper case (similar to toupper) that was about demographic data. Then, there was int containsTwoOfDigitsUpLowSymbol(char* stringPtr, int length)
+
+    for(i=0; i<length;i++)
+    {
+        if(stringPtr[i] >= '0' && stringPtr[i] <= '9'){
+            digitsCount++;
+        }
+        if(stringPtr[i] >= 'A' && stringPtr[i] <= 'Z'){
+            upCount++;
+        }
+        if(stringPtr[i] >= 'a' && stringPtr[i] <= 'z'){
+            lowCount++;
+        }
+        if(stringPtr[i] == '!' || stringPtr[i] == '@' || stringPtr[i] == '#' || 
+            stringPtr[i] == '$' || stringPtr[i] == '%' || stringPtr[i] == '^' || 
+            stringPtr[i] == '&' || stringPtr[i] == '*' ){
+            symbolCount++;
+        }
+    }
+
+to elicit user input of the password that had to contain exactly 2 characters of digits, uppercase letters, lowercase letters, and specific symbol characters.
+
+All the additions were about simple character strings, so it required only stdio.h, the standard input and output, as well as commonHelpers.h as header files. As in the above, I did not use the exact character library functions (isspace and toupper) this time.
+
