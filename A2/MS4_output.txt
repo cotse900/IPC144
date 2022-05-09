@@ -652,7 +652,7 @@ AGENT (Will Smith):
    What do you think?
 
 CUSTOMER (Betty Boop):
-   Double broken!
+   I'm so confused.
 
 << ENTER key to Continue... >>
 
@@ -881,7 +881,9 @@ Enter the password (must be 8 chars in length): aaJJ88$#
 
 Demographic Data Input
 ----------------------------------------
-Enter birth year (current age must be between 18 and 110): 2004
+Enter birth year (current age must be between 18 and 110): 2005
+ERROR: Value must be between 1912 and 2004 inclusive: 1911
+ERROR: Value must be between 1912 and 2004 inclusive: 2004
 Enter the household Income: $asdf
 ERROR: Value must be a double floating-point number: -8.22
 ERROR: Value must be a positive double floating-point number: 0.00
@@ -1410,7 +1412,7 @@ Acct# Acct.Type Birth Income      Country    Disp.Name       Login      Password
 82042 CUSTOMER   1932 $  40187.20 GUAM       Dexter Martin   Isabelle   H*2*k*&*
 35049 CUSTOMER   1990 $  60494.16 LESOTHO    Buck Odom       Aidan      B*6*s*&*
 54056 CUSTOMER   1961 $  91914.61 BAHAMAS    Craig Mcknight  Fredericka O*8*e*&*
-82043 CUSTOMER   2004 $   1910.00 U.S.A.     Nay to Hay      HarryHorse a*J*8*$*
+82043 CUSTOMER   2004 $ 125000.12 U.S.A.     Nay to Hay      HarryHorse a*J*8*$*
 53070 CUSTOMER   1990 $ 180222.22 CANADA     Wylie Coyote    Lara       d*9*@*F*
 
 << ENTER key to Continue... >>
@@ -2666,7 +2668,7 @@ Acct# Acct.Type Birth Income      Country    Disp.Name       Login      Password
 ----- --------- ----- ----------- ---------- --------------- ---------- --------
 50008 AGENT      1952 $2350600.82 U.S.A.     Will Smith      agentJ     T***2*t*
 82044 CUSTOMER   1912 $  54321.22 AUSTRALIA  Sandy Sand      CrazyCamel 1*R*!*j*
-82043 CUSTOMER   2004 $   1910.00 U.S.A.     Nay to Hay      HarryHorse a*J*8*$*
+82043 CUSTOMER   2004 $ 125000.12 U.S.A.     Nay to Hay      HarryHorse a*J*8*$*
 53070 CUSTOMER   1990 $ 180222.22 CANADA     Wylie Coyote    Lara       d*9*@*F*
 
 << ENTER key to Continue... >>
@@ -2750,7 +2752,7 @@ Selection: 0
 
 Saving session modifications...
    4 account saved.
-   7 tickets saved.
+   1 tickets saved.
 ### LOGGED OUT ###
 
 ==============================================
@@ -2768,6 +2770,6 @@ Are you sure you want to exit? ([Y]es|[N]o): y
 Account Ticketing System - Terminated
 ==============================================
 
-C:\Users\genig\source\repos\IPC144\Assignment2\Customer-Service-Management-system-main\Debug\a2ms4_2022.exe (process 15464) exited with code 0.
+C:\Users\genig\source\repos\IPC144\Assignment2\Customer-Service-Management-system-main\Debug\a2ms4_2022.exe (process 5164) exited with code 0.
 To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
 Press any key to close this window . . .
