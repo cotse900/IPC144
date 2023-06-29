@@ -1,0 +1,434 @@
+Script started on Thu 04 Mar 2021 06:12:12 PM EST
+==============================================
+Account Ticketing System - Login
+==============================================
+1) Login to the system
+0) Exit application
+----------------------------------------------
+
+Selection: 2
+ERROR: Value must be between 0 and 1 inclusive: -1
+ERROR: Value must be between 0 and 1 inclusive: login
+ERROR: Value must be an integer: 0
+
+Are you sure you want to exit? ([Y]es|[N]o): no
+ERROR: Character must be one of [yYnN]: n
+
+==============================================
+Account Ticketing System - Login
+==============================================
+1) Login to the system
+0) Exit application
+----------------------------------------------
+
+Selection: 1
+
+Enter your account#: 12345
+
+ERROR:  Access Denied.
+
+<< ENTER key to Continue... >>
+
+==============================================
+Account Ticketing System - Login
+==============================================
+1) Login to the system
+0) Exit application
+----------------------------------------------
+
+Selection: 1
+
+Enter your account#: 50001
+
+CUSTOMER: home menu currently unavailable...
+
+<< ENTER key to Continue... >>
+
+==============================================
+Account Ticketing System - Login
+==============================================
+1) Login to the system
+0) Exit application
+----------------------------------------------
+
+Selection: 1
+
+Enter your account#: 50008
+
+AGENT: Will Smith (50008)
+==============================================
+Account Ticketing System - Agent Menu
+==============================================
+1) Add a new account
+2) Modify an existing account
+3) Remove an account
+4) List accounts: summary view
+5) List accounts: detailed view
+----------------------------------------------
+0) Logout
+
+Selection: 1
+
+Account Data: New Record
+----------------------------------------
+Enter the account number: 91111
+
+Enter the account type (A=Agent | C=Customer): Agent
+ERROR: Character must be one of [AC]: a
+ERROR: Character must be one of [AC]: c
+ERROR: Character must be one of [AC]: C
+
+User Login Data Input
+----------------------------------------
+Enter user login (10 chars max): Williamson Willie
+ERROR: String length must be no more than 10 chars: Williamson
+Enter the display name (30 chars max): Tesla Tommy
+Enter the password (must be 8 chars in length): jump
+ERROR: String length must be exactly 8 chars: jumping
+ERROR: String length must be exactly 8 chars: seventeen million
+ERROR: String length must be exactly 8 chars: automall
+
+Demographic Data Input
+----------------------------------------
+Enter birth year (current age must be between 18 and 110): 2004
+ERROR: Value must be between 1911 and 2003 inclusive: 1910
+ERROR: Value must be between 1911 and 2003 inclusive: 2003
+Enter the household Income: $0.00
+ERROR: Value must be a positive double floating-point number: 1.99
+Enter the country (30 chars max.): FINLAND
+
+*** New account added! ***
+
+<< ENTER key to Continue... >>
+
+AGENT: Will Smith (50008)
+==============================================
+Account Ticketing System - Agent Menu
+==============================================
+1) Add a new account
+2) Modify an existing account
+3) Remove an account
+4) List accounts: summary view
+5) List accounts: detailed view
+----------------------------------------------
+0) Logout
+
+Selection: 4
+
+Acct# Acct.Type Birth
+----- --------- -----
+50001 CUSTOMER   1990
+50028 AGENT      1972
+50004 CUSTOMER   1978
+50008 AGENT      1952
+50020 CUSTOMER   2000
+91111 CUSTOMER   2003
+
+<< ENTER key to Continue... >>
+
+AGENT: Will Smith (50008)
+==============================================
+Account Ticketing System - Agent Menu
+==============================================
+1) Add a new account
+2) Modify an existing account
+3) Remove an account
+4) List accounts: summary view
+5) List accounts: detailed view
+----------------------------------------------
+0) Logout
+
+Selection: 5
+
+Acct# Acct.Type Birth Income      Country    Disp.Name       Login      Password
+----- --------- ----- ----------- ---------- --------------- ---------- --------
+50001 CUSTOMER   1990 $ 150000.10 CANADA     Silly Sally     cust1      p*s*w*r*
+50028 AGENT      1972 $2250400.22 AFRICA     Fred Flintstone agent1     y*b*d*b*
+50004 CUSTOMER   1978 $ 250800.74 INDIA      Betty Boop      cust2      p*p*e*3*
+50008 AGENT      1952 $2350600.82 U.S.A.     Will Smith      agentJ     t*e*o*s*
+50020 CUSTOMER   2000 $ 350500.35 KOREA      Shrimpy Shrimp  cust3      j*m*y*i*
+91111 CUSTOMER   2003 $      1.99 FINLAND    Tesla Tommy     Williamson a*t*m*l*
+
+<< ENTER key to Continue... >>
+
+AGENT: Will Smith (50008)
+==============================================
+Account Ticketing System - Agent Menu
+==============================================
+1) Add a new account
+2) Modify an existing account
+3) Remove an account
+4) List accounts: summary view
+5) List accounts: detailed view
+----------------------------------------------
+0) Logout
+
+Selection: 2
+
+Enter the account#: 91111
+
+Account: 91111 - Update Options
+----------------------------------------
+1) Update account type (current value: C)
+2) Login
+3) Demographics
+0) Done
+Selection: 1
+
+Enter the account type (A=Agent | C=Customer): A
+
+Account: 91111 - Update Options
+----------------------------------------
+1) Update account type (current value: A)
+2) Login
+3) Demographics
+0) Done
+Selection: 2
+
+User Login: Williamson - Update Options
+----------------------------------------
+1) Display name (current value: Tesla Tommy)
+2) Password
+0) Done
+Selection: 1
+
+Enter the display name (30 chars max): James Bond
+
+User Login: Williamson - Update Options
+----------------------------------------
+1) Display name (current value: James Bond)
+2) Password
+0) Done
+Selection: 2
+
+Enter the password (must be 8 chars in length): spygames
+
+User Login: Williamson - Update Options
+----------------------------------------
+1) Display name (current value: James Bond)
+2) Password
+0) Done
+Selection: 0
+
+Account: 91111 - Update Options
+----------------------------------------
+1) Update account type (current value: A)
+2) Login
+3) Demographics
+0) Done
+Selection: 3
+
+Demographic Update Options
+----------------------------------------
+1) Household Income (current value: $1.99)
+2) Country (current value: FINLAND)
+0) Done
+Selection: 1
+
+Enter the household Income: $2123456.75
+
+Demographic Update Options
+----------------------------------------
+1) Household Income (current value: $2123456.75)
+2) Country (current value: FINLAND)
+0) Done
+Selection: 2
+
+Enter the country (30 chars max.): IRELAND
+
+Demographic Update Options
+----------------------------------------
+1) Household Income (current value: $2123456.75)
+2) Country (current value: IRELAND)
+0) Done
+Selection: 0
+
+Account: 91111 - Update Options
+----------------------------------------
+1) Update account type (current value: A)
+2) Login
+3) Demographics
+0) Done
+Selection: 4
+ERROR: Value must be between 0 and 3 inclusive: 0
+
+AGENT: Will Smith (50008)
+==============================================
+Account Ticketing System - Agent Menu
+==============================================
+1) Add a new account
+2) Modify an existing account
+3) Remove an account
+4) List accounts: summary view
+5) List accounts: detailed view
+----------------------------------------------
+0) Logout
+
+Selection: 5
+
+Acct# Acct.Type Birth Income      Country    Disp.Name       Login      Password
+----- --------- ----- ----------- ---------- --------------- ---------- --------
+50001 CUSTOMER   1990 $ 150000.10 CANADA     Silly Sally     cust1      p*s*w*r*
+50028 AGENT      1972 $2250400.22 AFRICA     Fred Flintstone agent1     y*b*d*b*
+50004 CUSTOMER   1978 $ 250800.74 INDIA      Betty Boop      cust2      p*p*e*3*
+50008 AGENT      1952 $2350600.82 U.S.A.     Will Smith      agentJ     t*e*o*s*
+50020 CUSTOMER   2000 $ 350500.35 KOREA      Shrimpy Shrimp  cust3      j*m*y*i*
+91111 AGENT      2003 $2123456.75 IRELAND    James Bond      Williamson s*y*a*e*
+
+<< ENTER key to Continue... >>
+
+AGENT: Will Smith (50008)
+==============================================
+Account Ticketing System - Agent Menu
+==============================================
+1) Add a new account
+2) Modify an existing account
+3) Remove an account
+4) List accounts: summary view
+5) List accounts: detailed view
+----------------------------------------------
+0) Logout
+
+Selection: 3
+
+Enter the account#: 50008
+
+ERROR: You can't remove your own account!
+
+<< ENTER key to Continue... >>
+
+AGENT: Will Smith (50008)
+==============================================
+Account Ticketing System - Agent Menu
+==============================================
+1) Add a new account
+2) Modify an existing account
+3) Remove an account
+4) List accounts: summary view
+5) List accounts: detailed view
+----------------------------------------------
+0) Logout
+
+Selection: 3
+
+Enter the account#: 50001
+Acct# Acct.Type Birth Income      Country    Disp.Name       Login      Password
+----- --------- ----- ----------- ---------- --------------- ---------- --------
+50001 CUSTOMER   1990 $ 150000.10 CANADA     Silly Sally     cust1      p*s*w*r*
+
+Are you sure you want to remove this record? ([Y]es|[N]o): n
+ERROR: Character must be one of [YN]: N
+
+*** No changes made! ***
+
+<< ENTER key to Continue... >>
+
+AGENT: Will Smith (50008)
+==============================================
+Account Ticketing System - Agent Menu
+==============================================
+1) Add a new account
+2) Modify an existing account
+3) Remove an account
+4) List accounts: summary view
+5) List accounts: detailed view
+----------------------------------------------
+0) Logout
+
+Selection: 3
+
+Enter the account#: 50001
+Acct# Acct.Type Birth Income      Country    Disp.Name       Login      Password
+----- --------- ----- ----------- ---------- --------------- ---------- --------
+50001 CUSTOMER   1990 $ 150000.10 CANADA     Silly Sally     cust1      p*s*w*r*
+
+Are you sure you want to remove this record? ([Y]es|[N]o): Y
+
+*** Account Removed! ***
+
+<< ENTER key to Continue... >>
+
+AGENT: Will Smith (50008)
+==============================================
+Account Ticketing System - Agent Menu
+==============================================
+1) Add a new account
+2) Modify an existing account
+3) Remove an account
+4) List accounts: summary view
+5) List accounts: detailed view
+----------------------------------------------
+0) Logout
+
+Selection: 4
+
+Acct# Acct.Type Birth
+----- --------- -----
+50028 AGENT      1972
+50004 CUSTOMER   1978
+50008 AGENT      1952
+50020 CUSTOMER   2000
+91111 AGENT      2003
+
+<< ENTER key to Continue... >>
+
+AGENT: Will Smith (50008)
+==============================================
+Account Ticketing System - Agent Menu
+==============================================
+1) Add a new account
+2) Modify an existing account
+3) Remove an account
+4) List accounts: summary view
+5) List accounts: detailed view
+----------------------------------------------
+0) Logout
+
+Selection: 5
+
+Acct# Acct.Type Birth Income      Country    Disp.Name       Login      Password
+----- --------- ----- ----------- ---------- --------------- ---------- --------
+50028 AGENT      1972 $2250400.22 AFRICA     Fred Flintstone agent1     y*b*d*b*
+50004 CUSTOMER   1978 $ 250800.74 INDIA      Betty Boop      cust2      p*p*e*3*
+50008 AGENT      1952 $2350600.82 U.S.A.     Will Smith      agentJ     t*e*o*s*
+50020 CUSTOMER   2000 $ 350500.35 KOREA      Shrimpy Shrimp  cust3      j*m*y*i*
+91111 AGENT      2003 $2123456.75 IRELAND    James Bond      Williamson s*y*a*e*
+
+<< ENTER key to Continue... >>
+
+AGENT: Will Smith (50008)
+==============================================
+Account Ticketing System - Agent Menu
+==============================================
+1) Add a new account
+2) Modify an existing account
+3) Remove an account
+4) List accounts: summary view
+5) List accounts: detailed view
+----------------------------------------------
+0) Logout
+
+Selection: 6
+ERROR: Value must be between 0 and 5 inclusive: 0
+
+### LOGGED OUT ###
+
+==============================================
+Account Ticketing System - Login
+==============================================
+1) Login to the system
+0) Exit application
+----------------------------------------------
+
+Selection: 0
+
+Are you sure you want to exit? ([Y]es|[N]o): Yes
+ERROR: Character must be one of [yYnN]: no
+ERROR: Character must be one of [yYnN]: y
+
+==============================================
+Account Ticketing System - Terminated
+==============================================
+
+
+Script done on Thu 04 Mar 2021 06:18:20 PM EST
